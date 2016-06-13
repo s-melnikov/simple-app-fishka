@@ -1,0 +1,103 @@
+body {
+  margin-bottom: 60px;
+}
+table {
+  width: 100%;
+}
+table th {
+  text-align: left;
+}
+table tr:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+table tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+table td,
+table th {
+  padding: 6px 8px;
+}
+header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(37, 40, 43, 0.1);
+  vertical-align: top;
+}
+header .logo,
+header nav,
+header nav a {
+  display: block;
+  float: left;
+}
+header .logo {
+  font-size: 20px;
+  color: #ddd;
+  height: 50px;
+  padding: 7px 15px 0 0;
+  font-weight: bold;
+}
+header .logo:hover {
+  text-decoration: none;
+  color: #bbb;
+}
+header nav a {
+  position: relative;
+  padding: 15px;
+  height: 50px;
+  color: #999;
+}
+header nav a:hover {
+  color: #444;
+  text-decoration: none;
+}
+header nav a::before,
+header nav a:last-child::after {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  width: 1px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  content: "";
+}
+header nav a::before {
+  left: 0;
+}
+header nav a:last-child::after {
+  right: 0;
+}
+pre {
+  border: 1px solid #eee;
+  border-radius: 2px;
+  padding: 0 6px;
+  margin-bottom: 12px;
+}
+.login-form {
+  margin-top: 60px;
+}
+.table {
+  width: 100%;
+}
+.ideas .idea {
+  padding: 8px 12px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+.idea.idea-new {
+  border-color: #8ec9f9;
+}
+.idea.idea-processing {
+  border-color: #9bd2ac;
+}
+.idea.idea-complete {
+  border-color: #cccccc;
+}
+.users-table tr.inactive {
+  color: #cccccc;
+}
+.comments .comment {
+  border-left: 1px solid #eeeeee;
+  padding-left: 12px;
+}
+.comments .comment:hover {
+  background-color: #fafafa;
+}
